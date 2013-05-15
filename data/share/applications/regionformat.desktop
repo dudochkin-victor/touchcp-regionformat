@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=ControlPanelApplet
+Name=Region Format
+X-logical-id=qtn_comm_time_region_format
+X-translation-catalog=region,countries
+X-Maemo-Service=com.nokia.DuiControlPanel
+X-Maemo-Method=com.nokia.DuiControlPanelIf.appletPage
+X-Maemo-Object-Path=/
+X-Maemo-Fixed-Args=Region Format
+
+
+Icon=
+Exec=
+
+[DUI]
+X-DUIApplet-Applet=libregionformat.so
+
+[DCP]
+Part=Main
+Category=Time & Date
+Order=2
+

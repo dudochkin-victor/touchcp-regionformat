@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=DUIApplet
+Name=Region List
+X-logical-id=qtn_regn_regions_title
+X-translation-catalog=duicontrolpanel-regionformat
+Icon=
+Exec=
+
+[DUI]
+X-DUIApplet-Applet=libregionformat.so
+
+[DCP]
+Category=Startup
+Part=Region
+Order=2
+

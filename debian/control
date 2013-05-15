@@ -1,0 +1,35 @@
+Source: duicontrolpanel-regionformatapplet
+Section: devel
+Priority: extra
+Maintainer: Pinter Sandor <sandor.pinter@blumsoft.eu>
+Build-Depends: debhelper (>= 5), libmeegotouch-dev,
+               libduicontrolpanel-dev
+Standards-Version: 3.8.0
+
+Package: duicontrolpanel-regionformatapplet
+Section: x11
+Architecture: any
+Depends: ${shlibs:Depends}, duicontrolpanel, libduicontrolpanel,
+         duicontrolpanel-regionformatapplet-l10n-engineering-english (= ${binary:Version})
+Description: Regionformat applet for the control panel application
+
+Package: duicontrolpanel-regionformatapplet-dbg
+Section: devel
+Architecture: any
+Depends: duicontrolpanel-regionformatapplet (= ${binary:Version})
+Description: Regionformat applet for the control panel application debug symbols.
+
+Package: duicontrolpanel-regionformatapplet-l10n-engineering-english
+Section: devel
+Architecture: any
+Enhances: duicontrolpanel-regionformatapplet
+Description: Engineering English translations for the region format applet
+
+Package: duicontrolpanel-regionformatapplet-tests
+Section: misc
+Architecture: any
+Depends: ${shlibs:Depends},
+         duicontrolpanel-regionformatapplet (= ${binary:Version})
+XB-Maemo-CI-Packages: duicontrolpanel-regionformatapplet
+XB-Maemo-CI-Stage: fast, staging
+Description: duicontrolpanel-regionformatapplet unit and functional(non-GUI) tests
